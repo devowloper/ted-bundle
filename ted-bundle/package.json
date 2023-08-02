@@ -1,0 +1,39 @@
+```json
+{
+  "name": "ted-bundle",
+  "version": "1.0.0",
+  "description": "Shopify product bundle app",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "remix run",
+    "dev": "remix dev",
+    "build": "remix build",
+    "lint": "eslint . --ext .ts,.tsx",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@shopify/shopify-app-remix": "^1.0.0",
+    "@shopify/polaris": "^7.0.0",
+    "@remix-run/react": "^1.0.5",
+    "@remix-run/server-runtime": "^1.0.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.4.3",
+    "prisma": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}
+```

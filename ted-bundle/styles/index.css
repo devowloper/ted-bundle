@@ -1,0 +1,51 @@
+/* index.css */
+
+/* Import Shopify Polaris styles */
+@import '@shopify/polaris/styles.css';
+
+/* Custom styles for the ted-bundle app */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.bundle-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ebebeb;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.bundle-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.bundle-card .details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.bundle-card .details h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.bundle-card .details p {
+  margin: 0;
+  color: #666;
+}
+
+.bundle-card .quantity {
+  font-size: 18px;
+  font-weight: bold;
+}
