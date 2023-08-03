@@ -1,0 +1,21 @@
+```graphql
+query Input {
+  cart {
+    lines {
+      id
+      quantity
+      merchandise {
+        ... on ProductVariant {
+          id
+          component_parents: metafield(
+            namespace: "custom"
+            key: "component_parents"
+          ) {
+            value
+          }
+        }
+      }
+    }
+  }
+}
+```

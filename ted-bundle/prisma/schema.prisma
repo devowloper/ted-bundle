@@ -1,0 +1,17 @@
+```prisma
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Bundle {
+  id                  String   @id @default(cuid())
+  parentProductVariantId String
+  componentReference  String[]
+  componentQuantities Int[]
+}
+```
